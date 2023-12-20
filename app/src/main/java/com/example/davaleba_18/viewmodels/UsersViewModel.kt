@@ -8,7 +8,15 @@ import androidx.paging.cachedIn
 import com.example.davaleba_18.UserPagingSource
 
 class UsersViewModel : ViewModel() {
-    val userList = Pager(PagingConfig(pageSize = 6)) {
+    val userList = Pager(
+        PagingConfig(
+            pageSize = 6,
+            prefetchDistance = 3,
+            initialLoadSize = 12,
+            maxSize = 60,
+            enablePlaceholders = false
+        )
+    ) {
         UserPagingSource()
     }.flow.cachedIn(viewModelScope)
 }

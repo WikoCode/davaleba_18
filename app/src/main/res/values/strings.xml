@@ -5,4 +5,7 @@
     <string name="email">Email</string>
     <string name="firstname">FirstName</string>
     <string name="lastname">LastName</string>
+    <string name="retry">Retry</string>
+    <string name="it_is_currently_4_03_am">It is currently 4:03 AM</string>
+    <string name="i_made_this_at_4_03_am_lmfao">I made this at 4:03 AM lmfao</string>
 </resources>
